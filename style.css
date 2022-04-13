@@ -2,3 +2,65 @@
     font-family: "Norse-Bold";
     src: url(fonts/Norse-Bold.otf);
 }
+/*reminder: adding overflow prop to texts*/
+
+:root{
+    --topOfLogo:200px;
+    --logoSize:100px;
+}
+
+html{
+    font-family:"Norse-Bold",'Times New Roman', Times, serif;
+    color:white;
+}
+
+body{
+    box-sizing: border-box;
+    width:100vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+}
+
+#logoImg{
+    position:fixed;
+    top:var(--topOfLogo,200px);
+    left:20px;
+    height:var(--logoSize,150px);
+    width:var(--logoSize,150px);
+}
+
+#logoText{
+    position:fixed;
+    top:var(--topOfLogo,200px);
+    left:calc(var(--logoSize,150px) + 20px);
+    font-size:var(--logoSize,150px);
+    margin:0;
+}
+
+#creditText{
+    position:absolute;
+    margin:0;
+
+}
+
+#pictureBg{
+    width:30%;
+    height:100%;
+    background: url(pictures/background.jpg);
+}
+
+#logoDiv{
+    position:fixed;
+    top:var(--topOfLogo,200px);
+    height:var(--logoSize,150px);
+    width:100%;
+    background:white;
+    opacity:0.2;
+}
+
+
+
+#formDiv{
+
+}
