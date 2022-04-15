@@ -1,21 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Sign up form</title>
 </head>
+
 <body>
     <div id="pictureBg">
         <div id="logoDiv"></div>
-            <img id="logoImg" src="pictures/odin-logo.png" alt="logo of the odin project">
-            <h1 id="logoText">ODIN</h1>
-            <p id="creditText">Photo by Andy Holmes on Unsplash</p>
-        </div>
-
+        <img id="logoImg" src="pictures/odin-logo.png" alt="logo of the odin project">
+        <h1 id="logoText">ODIN</h1>
+        <p id="creditText">Photo by Andy Holmes on Unsplash</p>
     </div>
-    <div id="formDiv"></div>
+    </div>
+    <div id="rightDiv">
+        <p class="normalText">This is not a real online service!You know you need something<br>like this in your life to
+            help you realize your deepest dreams.</p>
+        <p class="normalText">You <em>know</em> you want to .</p>
+        <div id="formDiv">
+            <p class="normalText">Let's do this!</p>
+            <div id="formBody">
+                <div class="leftForm">
+                    <form action="#" method="get"></form>
+                    <label for="fname">FIRST NAME</label>
+                    <br>
+                    <input type="text" id="fname">
+                    <br>
+                    <label for="email">EMAIL</label>
+                    <br>
+                    <input type="email" id="email">
+                    <br>
+                    <label for="password">PASSWORD</label>
+                    <br>
+                    <input type="password" id="password">
+                </div>
+                <div class="rightForm">
+                    <label for="lname">LAST NAME</label>
+                    <br>
+                    <input type="text" id="lname">
+                    <br>
+                    <label for="phoneNum">PHONE NUMBER</label>
+                    <br>
+                    <input type="tel" id="phoneNum">
+                    <br>
+                    <label for="conPassword">CONFIRM PASSWORD</label>
+                    <br>
+                    <input type="text" id="conPassword">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

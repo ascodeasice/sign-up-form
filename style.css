@@ -11,15 +11,24 @@
 
 html{
     font-family:"Norse-Bold",'Times New Roman', Times, serif;
+}
+
+h1{
     color:white;
 }
 
 body{
+    display:flex;
     box-sizing: border-box;
     width:100vw;
     height:100vh;
     margin:0;
     padding:0;
+}
+
+input{
+    width:200px;
+    height:20px;
 }
 
 #logoImg{
@@ -41,7 +50,7 @@ body{
 #creditText{
     position:absolute;
     margin:0;
-
+    color:white;
 }
 
 #pictureBg{
@@ -54,13 +63,34 @@ body{
     position:fixed;
     top:var(--topOfLogo,200px);
     height:var(--logoSize,150px);
-    width:100%;
+    width:30%;
     background:white;
     opacity:0.2;
 }
 
-
+#rightDiv{
+    width:70%;
+    height:100%;
+    background:rgb(252, 252, 247);
+}
 
 #formDiv{
+    position:fixed;
+    width:70vw;
+    height:40vh;
+    background:white;
+    box-shadow: 0 0 5px black;
+    top:30%;
+}
 
+.normalText{
+    margin-left:40px;
+    font-family: 'Roboto', sans-serif;
+    font-size:1.4rem;
+}
+
+#formBody{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
 }
