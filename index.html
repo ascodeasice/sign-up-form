@@ -26,36 +26,39 @@
         <p class="normalText">You <em>know</em> you want to .</p>
         <div id="formDiv">
             <p class="normalText">Let's do this!</p>
+            <form action="#" method="get">
             <div id="formBody">
-                <div class="leftForm">
-                    <form action="#" method="get"></form>
+                <div class="formPart">
                     <label for="fname">FIRST NAME</label>
                     <br>
-                    <input type="text" id="fname">
+                    <input type="text" id="fname" placeholder=" " required>
                     <br>
                     <label for="email">EMAIL</label>
                     <br>
-                    <input type="email" id="email">
+                    <input type="email" id="email" placeholder=" " required>
                     <br>
                     <label for="password">PASSWORD</label>
                     <br>
-                    <input type="password" id="password">
+                    <input type="password" id="password" placeholder=" " minlength="8" required>
                 </div>
-                <div class="rightForm">
+                <div class="formPart">
                     <label for="lname">LAST NAME</label>
                     <br>
-                    <input type="text" id="lname">
+                    <input type="text" id="lname" placeholder=" " required>
                     <br>
                     <label for="phoneNum">PHONE NUMBER</label>
                     <br>
-                    <input type="tel" id="phoneNum">
+                    <input type="tel" id="phoneNum" placeholder=" " required>
                     <br>
                     <label for="conPassword">CONFIRM PASSWORD</label>
                     <br>
-                    <input type="text" id="conPassword">
+                    <input type="password" id="conPassword" placeholder=" " required>
                 </div>
             </div>
         </div>
+        <button id="createBtn" type="submit">Create Account</button>
+    </form>
+    <p id="logInText" class="normalText ">Already have an account?<a href="#">Log in</a></p>
     </div>
 </body>
 

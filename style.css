@@ -5,8 +5,9 @@
 /*reminder: adding overflow prop to texts*/
 
 :root{
-    --topOfLogo:200px;
     --logoSize:100px;
+    --topOfLogo:calc(30% - var(--logoSize));
+    --btnColor:#334088;
 }
 
 html{
@@ -27,8 +28,30 @@ body{
 }
 
 input{
-    width:200px;
-    height:20px;
+    width:300px;
+    height:25px;
+    margin-top:5px;
+    margin-bottom:5px;
+    border-radius:5px;
+    border:2px solid #000;
+}
+
+input:focus{
+    border-color:blue;
+    outline:0;
+    box-shadow: 0 0 5px black;
+}
+
+input:not(:placeholder-shown):invalid{
+    border-color:red;
+}
+
+a{
+    color:var(--btnColor);
+}
+
+button:hover{
+    opacity:0.8;
 }
 
 #logoImg{
@@ -92,5 +115,28 @@ input{
 #formBody{
     width:100%;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.formPart{
+    margin:0px 40px;
+}
+
+#createBtn{
+    background-color: var(--btnColor);
+    border-radius: 5px;
+    border:none;
+    color:white;
+    width:150px;
+    height:35px;
+    position:absolute;
+    bottom:20%;
+    left:33%;
+}
+
+#logInText{
+    font-size:1rem;
+    position:absolute;
+    bottom:12%;
+    left:30%;
 }
