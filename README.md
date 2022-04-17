@@ -1,5 +1,5 @@
 # sign-up-form
-This is a project to practice building sign up form
+This is a project to practice building sign up form</br>
 The background picture belongs to Andy Holmes on unsplash.com
 
 Result:
