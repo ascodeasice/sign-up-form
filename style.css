@@ -1,142 +1,143 @@
 @font-face {
     font-family: "Norse-Bold";
-    src: url(fonts/Norse-Bold.otf);
+    src: url(./assets/fonts/Norse-Bold.otf);
 }
+
 /*reminder: adding overflow prop to texts*/
 
-:root{
-    --logoSize:100px;
-    --topOfLogo:calc(30% - var(--logoSize));
-    --btnColor:#334088;
+:root {
+    --logoSize: 100px;
+    --topOfLogo: calc(30% - var(--logoSize));
+    --btnColor: #334088;
 }
 
-html{
-    font-family:"Norse-Bold",'Times New Roman', Times, serif;
+html {
+    font-family: "Norse-Bold", 'Times New Roman', Times, serif;
 }
 
-h1{
-    color:white;
+h1 {
+    color: white;
 }
 
-body{
-    display:flex;
+body {
+    display: flex;
     box-sizing: border-box;
-    width:100vw;
-    height:100vh;
-    margin:0;
-    padding:0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-input{
-    width:300px;
-    height:25px;
-    margin-top:5px;
-    margin-bottom:5px;
-    border-radius:5px;
-    border:2px solid #000;
+input {
+    width: 300px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #000;
 }
 
-input:focus{
-    border-color:blue;
-    outline:0;
+input:focus {
+    border-color: blue;
+    outline: 0;
     box-shadow: 0 0 5px black;
 }
 
-input:not(:placeholder-shown):invalid{
-    border-color:red;
+input:not(:placeholder-shown):invalid {
+    border-color: red;
 }
 
-a{
-    color:var(--btnColor);
+a {
+    color: var(--btnColor);
 }
 
-button:hover{
-    opacity:0.8;
+button:hover {
+    opacity: 0.8;
 }
 
-#logoImg{
-    position:fixed;
-    top:var(--topOfLogo,200px);
-    left:20px;
-    height:var(--logoSize,150px);
-    width:var(--logoSize,150px);
+#logoImg {
+    position: fixed;
+    top: var(--topOfLogo, 200px);
+    left: 20px;
+    height: var(--logoSize, 150px);
+    width: var(--logoSize, 150px);
 }
 
-#logoText{
-    position:fixed;
-    top:var(--topOfLogo,200px);
-    left:calc(var(--logoSize,150px) + 20px);
-    font-size:var(--logoSize,150px);
-    margin:0;
+#logoText {
+    position: fixed;
+    top: var(--topOfLogo, 200px);
+    left: calc(var(--logoSize, 150px) + 20px);
+    font-size: var(--logoSize, 150px);
+    margin: 0;
 }
 
-#creditText{
-    position:absolute;
-    margin:0;
-    color:white;
+#creditText {
+    position: absolute;
+    margin: 0;
+    color: white;
 }
 
-#pictureBg{
-    width:30%;
-    height:100%;
-    background: url(pictures/background.jpg);
+#pictureBg {
+    width: 30%;
+    height: 100%;
+    background: url(./assets/images/background.jpg);
 }
 
-#logoDiv{
-    position:fixed;
-    top:var(--topOfLogo,200px);
-    height:var(--logoSize,150px);
-    width:30%;
-    background:white;
-    opacity:0.2;
+#logoDiv {
+    position: fixed;
+    top: var(--topOfLogo, 200px);
+    height: var(--logoSize, 150px);
+    width: 30%;
+    background: white;
+    opacity: 0.2;
 }
 
-#rightDiv{
-    width:70%;
-    height:100%;
-    background:rgb(252, 252, 247);
+#rightDiv {
+    width: 70%;
+    height: 100%;
+    background: rgb(252, 252, 247);
 }
 
-#formDiv{
-    position:fixed;
-    width:70vw;
-    height:40vh;
-    background:white;
+#formDiv {
+    position: fixed;
+    width: 70vw;
+    height: 40vh;
+    background: white;
     box-shadow: 0 0 5px black;
-    top:30%;
+    top: 30%;
 }
 
-.normalText{
-    margin-left:40px;
+.normalText {
+    margin-left: 40px;
     font-family: 'Roboto', sans-serif;
-    font-size:1.4rem;
+    font-size: 1.4rem;
 }
 
-#formBody{
-    width:100%;
-    display:flex;
+#formBody {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
 }
 
-.formPart{
-    margin:0px 40px;
+.formPart {
+    margin: 0px 40px;
 }
 
-#createBtn{
+#createBtn {
     background-color: var(--btnColor);
     border-radius: 5px;
-    border:none;
-    color:white;
-    width:150px;
-    height:35px;
-    position:absolute;
-    bottom:20%;
-    left:33%;
+    border: none;
+    color: white;
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    bottom: 20%;
+    left: 33%;
 }
 
-#logInText{
-    font-size:1rem;
-    position:absolute;
-    bottom:12%;
-    left:30%;
+#logInText {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 12%;
+    left: 30%;
 }
